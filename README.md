@@ -10,4 +10,22 @@ React is a JavaScript library developed by Facebook which, among other things, w
 The Firebase Realtime Database lets you build rich, collaborative applications by allowing secure access to the database directly from client-side code. Data is persisted locally, and even while offline, realtime events continue to fire, giving the end user a responsive experience.
 
 # Databse dump
-Firease provides a Nosql databse structure for its documents, for this  I created a "sectors" collection which inturn holds the respective sector's it sef in an array  style format, same thing applies to the "Users" collection which holds data in an object style format
+Firease provides a Nosql databse structure for its documents, for this  I created a "sectors" collection which inturn holds the respective sector's it sef in an array  style format, same thing applies to the "Users" collection which holds data in an object style format:
+setors -> NNcXCtpBnh8c6a21wJv1 -> [
+                                     "Manufacturing",
+                                     "Food and Beverages"
+                                     "furniture",
+                                     "Aluminium"
+                                  ]
+Users -> TzNT4CkY7CfNaILrkRPY -> [
+                                    {
+                                      nmae: "Segun",
+                                      sector: "Manufacturing",
+                                      termsAgreement: true
+                                    },
+                                    {
+                                      name: "ben"
+                                      sector: "furniture",
+                                      termsAgreement: true
+                                    }
+                                 ]
