@@ -1,0 +1,126 @@
+.title {
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.frosted-glass {
+    border-radius: 10px;
+    width: 100%;
+    background: inherit;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /* margin: 0 auto; */
+    box-sizing: border-box;
+    box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10%;
+}
+  
+.frosted-glass::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: inherit;
+    box-shadow: inset 0 0 3000px rgba(255,255,255,.5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.input-cont {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+
+.input-cont-aux {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.name-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+}
+
+.error-text {
+    color: red;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+}
+
+.name-input::placeholder {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.options-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.check-box {
+    cursor: pointer;
+}
+
+.terms-text {
+    color: white;
+    margin-left: 15px;
+}
+
+.save-btn {
+    background-color: transparent;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+}
+
+.save-btn:hover {
+    transition: ease-in-out 0.5s;
+    background-color: white;
+    color: black;
+}
+
+#loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+  
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
