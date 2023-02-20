@@ -29,3 +29,7 @@ Users -> TzNT4CkY7CfNaILrkRPY -> [
                                       termsAgreement: true
                                     }
                                  ]
+
+![Alt text](relative/public/assets/img-1.png?raw=true "Title")
+
+![Alt text](relative/public/assets/img-2.png?raw=true "Title")
